@@ -4,6 +4,9 @@ $(document).ready(function() {
 	$(".burger").on("click", function() {
 		$(this).toggleClass("active");
 		$(".toggle-menu").slideToggle(333);
+		if($(window).width() < 769) { 
+			$("body.white").toggleClass('active');
+		}
 	});
 	/*==========/menu-toggle=========*/
 

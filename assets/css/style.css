@@ -37,6 +37,9 @@
   padding: 145px 0 260px !important;
   background: url("../images/technology/bg_blue.png") top left/100% auto no-repeat, url("../images/technology/bg_mountains.png") bottom left/100% auto no-repeat; }
 
+body.white.active {
+  overflow: hidden; }
+
 .content-block {
   max-width: 1024px;
   margin: 0 auto;
@@ -1320,7 +1323,17 @@ ul.menu-dots {
 
 @media (max-width: 768px) {
   .header-white__menu {
-    width: 100%; } }
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 48, 255, 0.7); }
+  .header-white .header__logo {
+    width: 130px;
+    margin-bottom: 0; }
+  .header-white .login {
+    margin-bottom: 5px; }
+    .header-white .login span {
+      font-size: 14px; } }
 
 @media (max-width: 546px) {
   .container {

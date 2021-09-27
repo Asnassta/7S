@@ -5,6 +5,14 @@
 	}
 }
 
+body {
+	&.white {
+		&.active {
+			overflow: hidden;
+		}
+	}
+}
+
 .content-block {
 	max-width: 1024px;
 	margin: 0 auto;
