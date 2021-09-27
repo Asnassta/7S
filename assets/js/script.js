@@ -23,6 +23,27 @@ $(document).ready(function() {
 		$('body').removeClass("hidden");
 	});
 /*==============/Form-popup=================*/
+/*==============/Link-dropdown=================*/
+
+if($(window).width() > 1360) { 
+	$(".header-white__link-drop").hover(function() {
+	$(this).find('.header-white__link-dropdown').fadeToggle(333);
+	});
+}
+/*==============/Link-dropdown=================*/
+
+/*==============Header-scroll==============*/
+ $(window).on('scroll', function(){
+    $scroll_top = $(window).scrollTop();
+
+    if($scroll_top > 200){
+      $('.header-scroll').addClass('fixed');
+    }
+    else{
+      $('.header-scroll').removeClass('fixed');
+    }
+  });
+ /*==============/Header-scroll==============*/
 
 	
 });
