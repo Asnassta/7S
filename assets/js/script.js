@@ -4,6 +4,7 @@ $(document).ready(function() {
 	$(".burger").on("click", function() {
 		$(this).toggleClass("active");
 		$(".toggle-menu").slideToggle(333);
+		$(".header").toggleClass('blue-bg');
 		if($(window).width() < 769) { 
 			$("body.white").toggleClass('active');
 		}
@@ -35,6 +36,12 @@ if($(window).width() > 1360) {
 }
 /*==============/Link-dropdown=================*/
 
+/*===============FAQ=================*/
+	$(".faq-block__header").on("click", function() {
+		$(this).next().slideToggle(333);
+		$(this).find('.faq-block__icon').toggleClass('active');
+	});
+
 /*==============Header-scroll==============*/
  $(window).on('scroll', function(){
     $scroll_top = $(window).scrollTop();
@@ -47,6 +54,25 @@ if($(window).width() > 1360) {
     }
   });
  /*==============/Header-scroll==============*/
+
+ /*=========Smooth scroll=============*/
+	$("[data-scroll]").on("click", function(event) {
+		event.preventDefault();
+
+		let $this = $(this),
+			blockID = $this.data('scroll'),
+			blockOffset = $(blockID).offset().top;
+
+		$("html, body").animate ({
+			scrollTop: blockOffset - 72
+		}, 500);
+		$('.header__mobile-toggle').slideUp(333);
+		$('.burger').removeClass('active');
+		$('body').removeClass('active');
+		$('.header').removeClass('blue-bg');
+
+	});
+/*=========/smooth scroll=============*/
 
 	
 });

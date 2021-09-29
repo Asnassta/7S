@@ -1,30 +1,38 @@
-@font-face {
-  font-family: 'Futura';
+
+ @font-face {
+  font-family: 'FuturaPT';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src:   url('../fonts/FuturaLT-Light.woff') format('woff'),
-  url('../fonts/FuturaLT-Light.ttf') format('truetype'),
+  src:   url('../fonts/FuturaPT-Light.woff') format('woff'),
+  url('../fonts/FuturaPT-Light.ttf') format('truetype'),
  }
 
-
-@font-face {
-  font-family: 'Futura';
+ @font-face {
+  font-family: 'FuturaPT';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src:   url('../fonts/FuturaLT.woff') format('woff'),
-  url('../fonts/FuturaLT.ttf') format('truetype'),
+  src:   url('../fonts/FuturaPT-Book.woff') format('woff'),
+  url('../fonts/FuturaPT-Book.ttf') format('truetype'),
  }
 
+ @font-face {
+  font-family: 'FuturaPT';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:   url('../fonts/FuturaPT-Demi.woff') format('woff'),
+  url('../fonts/FuturaPT-Demi.ttf') format('truetype'),
+ }
 
-@font-face {
-  font-family: 'Futura';
+ @font-face {
+  font-family: 'FuturaPT';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src:   url('../fonts/FuturaLT-Bold.woff') format('woff'),
-  url('../fonts/FuturaLT-Bold.ttf') format('truetype'),
+  src:   url('../fonts/FuturaPT-Bold.woff') format('woff'),
+  url('../fonts/FuturaPT-Bold.ttf') format('truetype'),
  }
 
  @font-face {

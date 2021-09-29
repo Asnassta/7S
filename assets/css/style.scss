@@ -1,6 +1,7 @@
 @import 'fonts.scss';
 @import 'variables.scss';
 @import 'page.scss';
+@import 'page_technology.scss';
 /*Reset
 ===============*/
 *{
@@ -83,7 +84,7 @@ body {
 		border-bottom: 3px solid $blue;
 	}
 	&-main {
-		font-family: $fff;
+		font-family: $fffpt;
 		font-size: 46px;
 		font-weight: 700;
 		color: $bl;
@@ -91,7 +92,7 @@ body {
 }
 
 .text {
-	font-family: $fff;
+	font-family: $fffpt;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 1.55;
@@ -107,7 +108,7 @@ ul {
 	&.menu-dots {
 		padding-left: 20px;
 		li {
-			font-family: $fff;
+			font-family: $fffpt;
 			font-size: 16px;
 			font-weight: 300;
 			line-height: 1.55;
@@ -189,6 +190,32 @@ ul {
 		}
 	}
 }
+
+.breadcrumbs {
+ &__item {
+ 	font-family: $fffpt;
+ 	font-size: 16px;
+ 	font-weight: 300;
+ 	color: $wh;
+ 	margin-right: 3px;
+ 	transition: all .2s linear;
+ 	&:after {
+ 		content: "»";
+ 		margin-left: 5px;
+ 		font-size: 18px;
+ 	}
+ 	&:last-child {
+ 		margin-right: 0;
+ 		&:after {
+ 			display: none;
+ 		}
+ 	}
+ 	&:hover {
+ 		color: $orange;
+
+ 	}
+ }
+}
 /*==============/elements================*/
 
 /*==============Grid=============*/
@@ -226,10 +253,23 @@ ul {
 		max-width: none;
 		padding: 0 40px;
 	}
+	&.blue-bg {
+		background: rgba(0, 68, 255, 0.7);
+	}
 	&__inner {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+	&__mobile-toggle {
+		width: calc(100% - 200px);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.header__nav {
+			flex: 1 1 auto;
+			text-align: center;
+		}
 	}
 	&__logo {
 		display: block;
@@ -241,7 +281,7 @@ ul {
 	}
 	&__link {
 		margin-right: 30px;
-		font-family: $fff;
+		font-family: $fffpt;
 		font-size: 16px;
 		font-weight: 400;
 		color: $bl;
@@ -254,6 +294,27 @@ ul {
 		}
 		&:last-child {
 			margin-right: 0;
+		}
+	}
+	&__social {
+		display: flex;
+		align-items: center;
+		img {
+			width: 22px;
+			height: 22px;
+			transition: all .2s linear;
+		}
+		a {
+			display: inline-block;
+			margin-right: 10px;
+			&:last-child {
+				margin-right: 0;
+			}
+			&:hover {
+				img {
+					transform: scale(1.1, 1.1);
+				}
+			}
 		}
 	}
 }
@@ -280,11 +341,11 @@ ul {
 	&__link {
 		display: flex;
 		background-color: $wh;
-		font-family: $fff;
+		font-family: $fffpt;
 		font-size: 15px;
 		font-weight: 400;
 		color: #878787;
-		padding: 5px 10px;
+		padding: 10px;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
@@ -315,7 +376,7 @@ ul {
 		flex: 1 1 15%;
 	}
 	&__phone {
-		font-family: $fff;
+		font-family: $fffpt;
 		font-weight: 400;
 		font-size: 16px;
 		color: $wh;
@@ -331,8 +392,10 @@ ul {
 .header-scroll {
 	&.fixed {
 		position: fixed;
-		background-color: rgba(0,48,255,0.33);
 		animation:slideDown .5s ease-in-out;
+		&.header-white {
+			background-color: rgba(0,48,255,0.33);
+		}
 	}
 }
 
@@ -364,7 +427,7 @@ ul {
 		}
 	}
 	span {
-		font-family: $fff;
+		font-family: $fffpt;
 		font-size: 16px;
 		font-weight: 400;
 		color: $wh;
@@ -815,7 +878,7 @@ ul {
 		}
 	}
 	&__info {
-		font-family: $fff;
+		font-family: $fffpt;
 		font-size: 12px;
 		font-weight: 400;
 		color: #5d5d5d;
@@ -829,7 +892,7 @@ ul {
 			}
 		}
 		a {
-			font-family: $fff;
+			font-family: $fffpt;
 			font-size: 14px;
 			color: #1e3afb;
 			line-height: 1.2;
@@ -851,7 +914,7 @@ ul {
 			margin-right: 2px;
 		}
 		span {
-			font-family: $fff;
+			font-family: $fffpt;
 			font-size: 24px;
 			font-weight: 500;
 			columns: $bl;
@@ -987,7 +1050,9 @@ ul {
 	}
 	.header-scroll {
 		&.fixed {
-			background-color: rgba(70, 48, 255, 0.8);
+			&.header-white {
+				background-color: rgba(70, 48, 255, 0.8);
+			}
 			.header-white__menu {
 				background-color: rgba(70, 48, 255, 0.8);
 			}
@@ -1202,6 +1267,10 @@ ul {
 				}
 			}
 
+	}
+
+	.header.blue-bg {
+   		 background: rgba(0, 68, 255, 0.9)!important;
 	}
 }
 
