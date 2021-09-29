@@ -66,10 +66,13 @@ if($(window).width() > 1360) {
 		$("html, body").animate ({
 			scrollTop: blockOffset - 72
 		}, 500);
-		$('.header__mobile-toggle').slideUp(333);
 		$('.burger').removeClass('active');
 		$('body').removeClass('active');
 		$('.header').removeClass('blue-bg');
+
+		if($(window).width() <= 1360) { 
+		$('.header__mobile-toggle').slideUp(333);
+		}
 
 	});
 /*=========/smooth scroll=============*/
