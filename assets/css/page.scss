@@ -11,6 +11,7 @@
 		}
 		.header__link {
 			color: $wh;
+			font-size: 18px;
 			&:hover {
 				color: $orange;
 			}
@@ -51,6 +52,9 @@
 			margin-top: 60px;
 			.patent-block__item {
 				cursor: zoom-in;
+				&:after {
+					background: rgba(0, 68, 255, 0.4);
+				}
 			}
 		}
 	}
@@ -817,7 +821,7 @@
 }
 
 @media(max-width: 768px) {
-	.page_educational {
+	.page_educational, .header_white-bg {
 		.header__logo {
 			width: 140px;
 		}
@@ -968,5 +972,32 @@
 	}
 	100% {
 		transform: translateY(0);
+	}
+}
+
+.animate__fadeInLeftMin {
+  animation-name: fadeInLeftMin;
+}
+@keyframes fadeInLeftMin {
+	0% {
+		transform: translateX(-200px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.animate__zoomInMin {
+  animation-name: zoomInMin;
+}
+@keyframes zoomInMin {
+	0% {
+		transform: scale3d(0.9, 0.9, 0.9);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
 	}
 }
