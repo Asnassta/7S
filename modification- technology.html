@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+	<link rel="shortcut icon" href="favicon.jpg">
+	<title>Технология 7Spsy | 7Spsy</title>
+</head>
+<body class="white">
+	<!--Sprite-->
+	<svg style="display: none;">
+  		<symbol id="arrow-intro" viewBox="0 0 38.417 18.592">
+    		<g><path  d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z"></path></g>
+  		</symbol>
+  		<symbol id="plus-close" viewBox="0 0 24 24">
+    		<g><g transform="translate(1.000000, 1.000000)"> <path d="M0,11 L22,11"></path> <path d="M11,0 L11,22"></path> </g> </g>
+  		</symbol>
+  		<symbol id="arrow-bend" viewBox="0 0 80 180">
+    		<path d="M54.1 109c-.8 0-1.6-.4-2-1.1-.8-1.1-.5-2.7.6-3.5 1.3-.9 6.8-4 11.6-6.6-15.9-1.3-29.2-8.3-38.5-20.2C8.9 56 8.5 24.1 13.2 3.4c.3-1.3 1.7-2.2 3-1.9 1.3.3 2.2 1.7 1.9 3-4.5 19.6-4.2 49.8 11.6 70 9 11.5 21.5 17.7 37.2 18.4l-1.8-2.3c-1.4-1.7-2.7-3.4-4.1-5.1-.7-.9-1.5-1.9-2.3-2.9-.9-1.1-.7-2.6.4-3.5 1.1-.9 2.6-.7 3.5.4 0 0 0 .1.1.1l6.4 7.9c.5.5.9 1.1 1.4 1.7 1.5 1.8 3.1 3.6 4.4 5.6 0 .1.1.1.1.2.1.3.2.5.3.8v.6c0 .2-.1.4-.2.6-.1.1-.1.3-.2.4-.1.2-.3.4-.5.6-.1.1-.3.2-.5.3-.1 0-.1.1-.2.1-1.2.6-16 8.6-18.1 10-.5.5-1 .6-1.5.6z"></path>
+  		</symbol><symbol id="review-border" viewBox="0 0 1200 31.7">
+        	<g><polygon points="40,31.7 40,4 0,4 0,0 44,0 44,22.3 67.2,0 1200,0 1200,4 68.8,4 "></polygon></g>
+  		</symbol>
+  		<symbol id="bg-hex" viewBox="0 0 800000 480001">
+    		<path d="M641198 383915l37121 21431v-42862l-37121 21431zm-473507 2144l37120 21431v-42861l-37120 21430zm76643-89883l38720 22356 38720 22356 267 155v90035l-267 155-38720 22356-38720 22356-268 154-268-154-38721-22356-38719-22356-268-155v-90035l268-155 38719-22356 38721-22356 268-154 268 154zm37386 22818l-37120-21432v42863l37120-21431zm-38189-21432l-37120 21432 37120 21431v-42863zm-38720 22356l-37121 21431 37121 21431v-42862zm-37652 22355v42865l37120-21432-37120-21432zm0 44711v42865l37120-21432-37120-21432zm531 43788l37121 21431v-42862l-37121 21431zm38721 22355l37120 21432v-42863l-37120 21431zm38189 21432l37120-21432-37120-21431v42863zm38720-22356l37122-21431-37122-21431v42862zm37654-22355v-42865l-37121 21432 37121 21432zm0-44711v-42865l-37121 21432 37121 21432zm-531-43788l-37122-21431v42862l37122-21431zm-75842 924v42865l37120-21432-37120-21432zm0 44711v42865l37120-21432-37120-21432zm-1069 42865v-42865l-37120 21432 37120 21432zm0-44711v-42865l-37120 21432 37120 21432zm1602 922l37120 21431v-42861l-37120 21430zm-2133 0l-37120-21430v42861l37120-21431zm-37120-66142v42862l37120-21431-37120-21431zm0 89423v42862l37120-21431-37120-21431zm77440-44711v42861l37121-21431-37121-21430zm-1068 87573v-42862l-37120 21431 37120 21431zm0-89423v-42862l-37120 21431 37120 21431zM6052 93943l37120 21431V72513L6052 93943zM82695 4060l38721 22356 38719 22356 268 155v90035l-268 155-38719 22356-38721 22356-268 154-267-154-38721-22356-38719-22356-268-155V48927l268-155 38719-22356L82160 4060l267-154 268 154zm37387 22818L82962 5446v42863l37120-21431zM81893 5446L44773 26878l37120 21431V5446zM43172 27802L6051 49233l37121 21431V27802zM5520 50157v42865l37121-21432L5520 50158zm0 44711v42865l37121-21432L5520 94869zm531 43788l37121 21431v-42862L6051 138656zm38723 22355l37120 21432v-42863l-37120 21431zm38189 21432l37120-21432-37120-21431v42863zm38720-22356l37121-21431-37121-21431v42862zm37652-22355V94867l-37120 21432 37120 21432zm0-44711V50156l-37120 21432 37120 21432zm-531-43788l-37121-21431v42862l37121-21431zm-75841 924v42865l37120-21432-37120-21432zm0 44711v42865l37120-21432-37120-21432zm-1069 42865V94868l-37120 21432 37120 21432zm0-44711V50157L44774 71589l37120 21432zm1600 922l37120 21431V72514L83494 93944zm-2133 0L44241 72514v42861l37120-21431zM44241 27802v42862l37120-21431-37120-21431zm0 89423v42862l37120-21431-37120-21431zm77441-44711v42861l37120-21431-37120-21430zm-1069 87573v-42862l-37120 21431 37120 21431zm0-89423V27802L83493 49233l37120 21431zM84403 240338l37120 21431v-42861l-37120 21430zm76643-89883l38721 22356 38719 22356 268 155v90035l-268 155-38719 22356-38721 22356-268 154-268-154-38721-22356-38718-22356-269-155v-90035l269-155 38718-22356 38721-22356 268-154 268 154zm37387 22818l-37121-21432v42863l37121-21431zm-38189-21432l-37121 21432 37121 21431v-42863zm-38721 22356l-37121 21431 37121 21431v-42862zm-37652 22355v42865l37121-21432-37121-21432zm0 44711v42865l37121-21432-37121-21432zm531 43788l37121 21431v-42862l-37121 21431zm38721 22355l37121 21432v-42863l-37121 21431zm38189 21432l37121-21432-37121-21431v42863zm38721-22356l37121-21431-37121-21431v42862zm37652-22355v-42865l-37121 21432 37121 21432zm0-44711v-42865l-37121 21432 37121 21432zm-531-43788l-37121-21431v42862l37121-21431zm-75842 924v42865l37121-21432-37121-21432zm0 44711v42865l37121-21432-37121-21432zm-1068 42865v-42865l-37121 21432 37121 21432zm0-44711v-42865l-37121 21432 37121 21432zm1600 922l37120 21431v-42861l-37120 21430zm-2133 0l-37120-21430v42861l37120-21431zm-37120-66142v42862l37120-21431-37120-21431zm0 89423v42862l37120-21431-37120-21431zm77441-44711v42861l37120-21431-37120-21430zm-1069 87573v-42862l-37120 21431 37120 21431zm0-89423v-42862l-37120 21431 37120 21431zm52338 23280l37120 21431v-42861l-37120 21430zm76643-89883l38720 22356 38719 22356 268 155v90035l-268 155-38719 22356-38720 22356-268 154-268-154-38721-22356-38719-22356-268-155v-90035l268-155 38719-22356 38721-22356 268-154 268 154zm37386 22818l-37120-21432v42863l37120-21431zm-38189-21432l-37120 21432 37120 21431v-42863zm-38720 22356l-37121 21431 37121 21431v-42862zm-37652 22355v42865l37120-21432-37120-21432zm0 44711v42865l37120-21432-37120-21432zm531 43788l37121 21431v-42862l-37121 21431zm38721 22355l37120 21432v-42863l-37120 21431zm38189 21432l37120-21432-37120-21431v42863zm38720-22356l37122-21431-37122-21431v42862zm37652-22355v-42865l-37120 21432 37120 21432zm0-44711v-42865l-37120 21432 37120 21432zm-530-43788l-37122-21431v42862l37122-21431zm-75842 924v42865l37120-21432-37120-21432zm0 44711v42865l37120-21432-37120-21432zm-1069 42865v-42865l-37120 21432 37120 21432zm0-44711v-42865l-37120 21432 37120 21432zm1600 922l37121 21431v-42861l-37121 21430zm-2132 0l-37120-21430v42861l37120-21431zm-37120-66142v42862l37120-21431-37120-21431zm0 89423v42862l37120-21431-37120-21431zm77440-44711v42861l37121-21431-37121-21430zm-1068 87573v-42862l-37121 21431 37121 21431zm0-89423v-42862l-37121 21431 37121 21431zM328741 93945l37120 21431V72515l-37120 21430zm76643-89883l38720 22356 38720 22356 267 155v90035l-267 155-38720 22356-38720 22356-268 154-268-154-38721-22356-38719-22356-268-155V48929l268-155 38719-22356 38721-22356 268-154 268 154zm37386 22818L405650 5448v42863l37120-21431zM404581 5448l-37120 21432 37120 21431V5448zm-38720 22356l-37121 21431 37121 21431V27804zm-37652 22355v42865l37121-21432-37121-21432zm0 44711v42865l37121-21432-37121-21432zm531 43788l37121 21431v-42862l-37121 21431zm38721 22355l37120 21432v-42863l-37120 21431zm38189 21432l37120-21432-37120-21431v42863zm38721-22356l37121-21431-37121-21431v42862zm37652-22355V94869l-37121 21432 37121 21432zm0-44711V50158l-37121 21432 37121 21432zm-531-43788l-37121-21431v42862l37121-21431zm-75842 924v42865l37120-21432-37120-21432zm0 44711v42865l37120-21432-37120-21432zm-1069 42865V94870l-37120 21432 37120 21432zm0-44711V50159l-37120 21432 37120 21432zm1602 922l37120 21431V72516l-37120 21430zm-2133 0l-37120-21430v42861l37120-21431zm-37120-66142v42862l37120-21431-37120-21431zm0 89423v42862l37120-21431-37120-21431zm77441-44711v42861l37120-21431-37120-21430zm-1069 87573v-42862l-37120 21431 37120 21431zm0-89423V27804l-37120 21431 37120 21431zm52337 23280l37121 21431V72516l-37121 21430zm76644-89883l38720 22356 38719 22356 268 155v90035l-268 155-38719 22356-38720 22356-269 154-267-154-38721-22356-38719-22356-268-155V48930l268-155 38719-22356 38721-22356 267-154 269 154zm37386 22818L572549 5449v42863l37120-21431zM571480 5449l-37120 21432 37120 21431V5449zm-38720 22356l-37121 21431 37121 21431V27805zm-37654 22355v42865l37121-21432-37121-21432zm0 44711v42865l37121-21432-37121-21432zm533 43788l37121 21431v-42862l-37121 21431zm38721 22355l37120 21432v-42863l-37120 21431zm38189 21432l37120-21432-37120-21431v42863zm38720-22356l37122-21431-37122-21431v42862zm37652-22355V94870l-37120 21432 37120 21432zm0-44711V50159l-37120 21432 37120 21432zm-530-43788l-37122-21431v42862l37122-21431zm-75842 924v42865l37120-21432-37120-21432zm0 44711v42865l37120-21432-37120-21432zm-1069 42865V94871l-37120 21432 37120 21432zm0-44711V50160l-37120 21432 37120 21432zm1600 922l37120 21431V72517l-37120 21430zm-2132 0l-37121-21430v42861l37121-21431zm-37121-66142v42862l37121-21431-37121-21431zm0 89423v42862l37121-21431-37121-21431zm77441-44711v42861l37120-21431-37120-21430zm-1069 87573v-42862l-37120 21431 37120 21431zm0-89423V27805l-37120 21431 37120 21431zm107639 223369l38721 22356 38719 22356 268 154v90035l-268 155-38719 22356-38721 22356-268 155-267-155-38721-22356-38719-22356-268-155v-90035l268-154 38719-22356 38721-22356 267-155 268 155zm37387 22817l-37120-21431v42863l37120-21432zm-38189-21431l-37120 21431 37120 21432v-42863zm-38720 22356l-37121 21430 37121 21432v-42862zm-37654 22355v42863l37121-21432-37121-21431zm0 44711v42863l37121-21431-37121-21432zm533 43788l37121 21430v-42862l-37121 21432zm38721 22355l37120 21431v-42863l-37120 21432zm38189 21431l37120-21431-37120-21432v42863zm38720-22356l37122-21430-37122-21432v42862zm37652-22355v-42863l-37120 21432 37120 21431zm0-44711v-42863l-37120 21431 37120 21432zm-530-43788l-37122-21430v42862l37122-21432zm-75842 925v42863l37120-21432-37120-21431zm0 44711v42863l37120-21431-37120-21432zm-1069 42863v-42863l-37120 21432 37120 21431zm0-44711v-42863l-37120 21431 37120 21432zm1600 924l37120 21431v-42862l-37120 21431zm-2133 0l-37120-21431v42862l37120-21431zm-37120-66142v42862l37120-21432-37120-21430zm0 89421v42862l37120-21430-37120-21432zm77441-44711v42862l37120-21431-37120-21431zm-1069 87573v-42862l-37120 21432 37120 21430zm0-89421v-42862l-37120 21430 37120 21432z"></path>
+  		</symbol>
+  		<symbol id="phone" viewBox="0 0 100 100">
+    		<path d="M19.5 6.4c-3.7 1.7-12.3 10-13.5 13-1 2.8.3 10.3 2.9 16.2 3.5 7.8 12.3 19.4 22.6 29.9C47 81.2 58.6 89.3 70.7 92.6c7.8 2.1 10.5 1.2 16.9-6 5.2-5.7 6.8-9 6-12.2C92.9 71.9 73.9 59 70.8 59c-1 0-4.1 1.1-6.8 2.5S58.8 64 58.4 64c-1 0-21.4-20.1-22.5-22.2-.6-1.1-.2-2.9 1.6-6 3.7-6.5 3.3-8.7-3.6-19.1-3.4-5.1-6.4-9.5-6.8-9.8-1.4-1.5-4.8-1.7-7.6-.5zm10 13.3l5.8 8.7-3.3 6.3-3.3 6.2 4.1 5.4c4.6 5.9 15.5 16.7 21.6 21.2l3.8 2.9 6.3-3.3 6.2-3.3 9.2 6.1c10.4 7 10.3 6.6 2.3 14.5l-5 4.8-5.3-1.6c-10.9-3.1-23.2-12-37.8-27.1-13.5-14.1-20.9-25.1-23-34.7l-1-4.3 5.4-5.2c3-2.9 6.1-5.3 6.8-5.3.8 0 4 3.9 7.2 8.7z"></path>
+  		</symbol>
+  		<symbol id="email" viewBox="0 0 100 100">
+    		<path d="M0 49.5V84h36.5c20.1 0 36.5-.4 36.5-.8 0-.5-.8-1.6-1.8-2.5-1.7-1.5-5.5-1.7-34.5-1.7C6.2 79 4 78.9 4 77.2c.1-1 5.7-6 13.8-12.3l13.7-10.6 2.8 2.1c8 6 9.1 6.6 13.3 6.6 4.3 0 4.3 0 3.2-2.5-.7-1.5-2-2.5-3.2-2.5-3 0-5.2-1.6-25.5-19C11.5 29.9 4 22.8 4 21.7 4 20.1 6.7 20 47.5 20c41.9 0 43.5.1 43.5 1.9 0 1.2-4.5 5.7-12 12.1-11.5 9.8-12 10.4-10.4 12.1 2 2.2 1.1 2.7 12.6-7.1l9.3-8 .3 18.9c.2 18.5.3 18.8 2.7 21.1l2.5 2.3V15H0v34.5zm17.3-7.6c5.3 4.5 9.7 8.6 9.7 9-.1.3-2 2-4.3 3.7-2.3 1.7-7.5 5.7-11.4 8.8L4 69.1V49.9c0-18.1.1-19.1 1.8-17.8.9.8 6.1 5.2 11.5 9.8z"></path>
+    		<path d="M49.4 44.3c-.3.8.4 4.6 1.5 8.4 2 6.7 2.3 7.1 18.8 23.5 11 10.9 17.8 16.9 19.7 17.4C95.1 95 101 89 99.5 83.2c-.4-1.6-7.3-9.4-17.3-19.5-14.9-15-17.2-16.9-21.7-18.2-9.6-2.7-10.4-2.8-11.1-1.2zm27.1 21.4L92 80.5 89.5 83 87 85.5 72.1 70.6c-9.9-9.8-15.2-15.9-15.8-18.1-1-3.3-1-3.3 1.8-2.5 1.7.5 9.5 7.2 18.4 15.7z"></path>
+  		</symbol>
+	</svg>
+
+	<div class="wrapper page page_modification">
+		<!--Header-->
+		<header class="header header-scroll header_white-bg">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__head">
+						<a href="/" class="header__logo">
+							<img src="assets/images/logo_blue.svg" alt="">
+						</a>
+						<div class="burger">
+							<span class="burger__item"></span>
+						</div>
+					</div>
+					<div class="header__mobile-toggle toggle-menu">
+						<nav class="header__nav">
+							<a href="#" class="header__link" data-scroll="#modification-presents">Модификация поведения</a>
+							<a href="#" class="header__link" data-scroll="#modification-how">Как это работает?</a>
+							<a href="#" class="header__link" data-scroll="#modification-garancy">Гарантии</a>
+						</nav>
+						<div class="header__contact">
+							<a href="tel:+78005509936" class="header__link">8 800 550 99 36</a>
+							<a href="#" class="btn btn-open">Получить консультацию</a>
+						</div>
+					</div><!--/header__mobile-toggle-->
+				</div>
+			</div>
+		</header>
+		<!--/header-->
+		<main class="main">
+			<section class="modification-intro">
+				<div class="modification-intro__content">
+					<div class="container">
+						<div class="breadcrumbs breadcrumbs_center">
+							<a href="#" class="breadcrumbs__item">Главная</a>
+							<a href="#" class="breadcrumbs__item">Услуги</a>
+							<a href="#" class="breadcrumbs__item">Технология 7Spsy</a>
+						</div><!--/breadcrumbs-->
+						<h1 class="modification-intro__title">Технология модификации<br> поведения 7Spsy</h1>
+						<div class="modification-intro__subtitle">Откажитесь от старых привычек для лучшей жизни</div>
+						<a href="#" class="btn btn-open btn_big">Научитесь жить по-новому</a>
+					</div>
+				</div>
+				<div class="modification-intro__bg">
+					<video width="100%" autoplay="autoplay" preload="auto" autoplay="true" loop="true" muted="muted">
+				 	 <source src="assets/images/modification/changing.mp4" type="video/mp4"/>
+					</video>
+				</div>
+			</section><!--/modification-intro-->
+			<div class="modification-review">
+				<div class="container">
+						<div class="modification-review__item">
+							<div class="modification-review__text">
+								Я — бывший курильщик. БЫВШИЙ! 10 лет безуспешных попыток бросить... И всего 1,5 месяца по курсу изменили меня полностью. Прошлая жизнь кажется плохим сном с дурным запахом.
+							</div>
+							<div class="modification-review__border">
+								<svg>
+        							<use xlink:href="#review-border"></use>
+      							</svg>
+							</div>
+							<div class="modification-review__autor">
+								<img src="assets/images/modification/autor_1.jpg" alt="">
+								<span>Евгений</span>
+							</div>
+						</div><!--/modification-review__item-->
+						<div class="modification-review__item">
+							<div class="modification-review__text">
+								Это удивительно! Оказывается, нужно было просто делать тренинги каждый день, и желание заниматься обжорством исчезает.
+							</div>
+							<div class="modification-review__border">
+								<svg>
+        							<use xlink:href="#review-border"></use>
+      							</svg>
+							</div>
+							<div class="modification-review__autor">
+								<img src="assets/images/modification/autor_2.jpg" alt="">
+								<span>Екатерина</span>
+							</div>
+						</div><!--/modification-review__item-->
+				</div>
+			</div><!--/modification-review-->
+			<div class="modification-presents" id="modification-presents">
+				<div class="container">
+					<h2 class="modification__title wow animate__fadeIn">Институт дистанционной психологии представляет:</h2>
+					<div class="modification-presents__inner wow animate__fadeIn">
+						<div class="modification-presents__item">Модальность поведенческой психотерапии</div>
+						<div class="modification-presents__item">Полностью дистанционное прохождение</div>
+						<div class="modification-presents__item">Занятия с психологом + тренинги</div>
+						<div class="modification-presents__item">6 недель до ощутимого результата</div>
+					</div>
+				</div>
+			</div><!--/modification-presents-->
+			<div class="modification-about">
+				<div class="container">
+					<div class="modification-about__item">
+						<div class="modification-about__text">
+							<p>
+								<span class="modification-about__title">7Spsy</span>
+								— технология изменения поведения, соединяющая в себе ежедневные занятия с личным психологом и самостоятельные тренинги дома.
+							</p>
+						</div>
+					</div>
+					<div class="modification-about__item">
+						<div class="modification-about__title">Зачем менять поведение?</div>
+						<div class="modification-about__text">Окружающая вас поведенческая среда формирует вашу реальность каждый день. Вы бессознательно выбираете модель поведения, руководствуясь сигналами этой среды. Эта модель может зафиксироваться и превратиться в выученную форму, от которой вы, возможно, не сможете самостоятельно отказаться.</div>
+					</div>
+					<div class="modification-about__item">
+						<div class="modification-about__title">Что делать, если выученная форма поведения приносит неприятности?</div>
+						<div class="modification-about__text">С помощью тренинга выучить новую модель поведения и таким образом без мучений отказаться от старой.</div>
+					</div>
+				</div>
+			</div><!--/modification-about-->
+			<section class="modification-behaviour">
+				<div class="container">
+					<h2 class="modification__title wow animate__fadeIn">Поведение может приносить радость, а может приносить боль</h2>
+				</div>
+				<div class="modification-behaviour__box">
+					<div class="modification-behaviour__row wow animate__fadeIn">
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">Положительное поведение</div>
+							<div class="modification-behaviour__result">Добрые и теплые отношения в семье</div>
+						</div><!--/modification-behaviour__item-->
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">отрицательное поведение</div>
+							<div class="modification-behaviour__result">Постоянные конфликты в семье</div>
+						</div><!--/modification-behaviour__item-->
+					</div><!--/"modification-behaviour__row-->
+					<div class="modification-behaviour__row wow animate__fadeIn">
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">Положительное поведение</div>
+							<div class="modification-behaviour__result">Свободная жизнь без вредных привычек</div>
+						</div><!--/modification-behaviour__item-->
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">отрицательное поведение</div>
+							<div class="modification-behaviour__result">Зависимость от алкоголя, курения, наркотиков и пр.</div>
+						</div><!--/modification-behaviour__item-->
+					</div><!--/"modification-behaviour__row-->
+					<div class="modification-behaviour__row wow animate__fadeIn">
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">Положительное поведение</div>
+							<div class="modification-behaviour__result">Активный образ жизни и занятия спортом</div>
+						</div><!--/modification-behaviour__item-->
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">отрицательное поведение</div>
+							<div class="modification-behaviour__result">Низкий уровень физической активности и, как следствие, проблемы с фигурой и самочувствием</div>
+						</div><!--/modification-behaviour__item-->
+					</div><!--/"modification-behaviour__row-->
+					<div class="modification-behaviour__row wow animate__fadeIn">
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">Положительное поведение</div>
+							<div class="modification-behaviour__result">Взаимопонимание родителей и детей</div>
+						</div><!--/modification-behaviour__item-->
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">отрицательное поведение</div>
+							<div class="modification-behaviour__result">Конфликты между родителями и детьми</div>
+						</div><!--/modification-behaviour__item-->
+					</div><!--/"modification-behaviour__row-->
+					<div class="modification-behaviour__row wow animate__fadeIn">
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">Положительное поведение</div>
+							<div class="modification-behaviour__result">Хорошая успеваемость, высокая мотивация к обучению</div>
+						</div><!--/modification-behaviour__item-->
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">отрицательное поведение</div>
+							<div class="modification-behaviour__result">Нежелание учиться</div>
+						</div><!--/modification-behaviour__item-->
+					</div><!--/"modification-behaviour__row-->
+					<div class="modification-behaviour__row wow animate__fadeIn">
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">Положительное поведение</div>
+							<div class="modification-behaviour__result">Успешная карьера</div>
+						</div><!--/modification-behaviour__item-->
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">отрицательное поведение</div>
+							<div class="modification-behaviour__result">Проблема самореализации</div>
+						</div><!--/modification-behaviour__item-->
+					</div><!--/"modification-behaviour__row-->
+					<div class="modification-behaviour__row wow animate__fadeIn">
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">Положительное поведение</div>
+							<div class="modification-behaviour__result">Высокий доход</div>
+						</div><!--/modification-behaviour__item-->
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">отрицательное поведение</div>
+							<div class="modification-behaviour__result">Финансовые трудности</div>
+						</div><!--/modification-behaviour__item-->
+					</div><!--/"modification-behaviour__row-->
+					<div class="modification-behaviour__row wow animate__fadeIn">
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">Положительное поведение</div>
+							<div class="modification-behaviour__result">Оптимистичный настрой</div>
+						</div><!--/modification-behaviour__item-->
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">отрицательное поведение</div>
+							<div class="modification-behaviour__result">Негативное отношение к жизни</div>
+						</div><!--/modification-behaviour__item-->
+					</div><!--/"modification-behaviour__row-->
+					<div class="modification-behaviour__row wow animate__fadeIn">
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">Положительное поведение</div>
+							<div class="modification-behaviour__result">Умение дружить, выстраивать отношения</div>
+						</div><!--/modification-behaviour__item-->
+						<div class="modification-behaviour__item">
+							<div class="modification-behaviour__description">отрицательное поведение</div>
+							<div class="modification-behaviour__result">Проблемы в социальных коммуникациях</div>
+						</div><!--/modification-behaviour__item-->
+					</div><!--/"modification-behaviour__row-->
+				</div>
+			</section><!--/modification-behaviour-->
+			<section class="modification-how" id="modification-how">
+				<div class="container">
+					<h2 class="modification__title modification__title_black wow animate__fadeInLeftMin">Как формируется проблемное поведение?</h2>
+					<div class="modification-how__box step-box">
+						<div class="step-box__steps step-box__steps_left">
+							<div class="step-box__step wow animate__fadeInLeft">
+								<div class="step-box__info step-box__info_left">
+									<div class="step-box__name">Этап</div>
+									<div class="step-box__text">Для того, чтобы человек привык к алкоголю, его ставят на стол рядом с едой.</div>
+								</div>
+								<div class="step-box__number">
+									<img src="assets/images/modification/steps_1.jpg" alt="">
+								</div>
+							</div><!--/step-box__step-->
+							<div class="step-box__step wow animate__fadeInLeft" data-wow-delay=".2s">
+								<div class="step-box__info step-box__info_left">
+									<div class="step-box__name">Этап</div>
+									<div class="step-box__text">После нескольких повторений появляется пищевая реакция на алкоголь (непроизвольное слюноотделение).</div>
+								</div>
+								<div class="step-box__number">
+									<img src="assets/images/modification/steps_2.jpg" alt="">
+								</div>
+							</div><!--/step-box__step-->
+						</div><!--/step-box__steps-->
+						<div class="step-box__photo">
+							<img src="assets/images/modification/behaviour-result.jpg" alt="">
+						</div>
+						<div class="step-box__steps">
+							<div class="step-box__step wow animate__fadeInLeft" data-wow-delay=".4s">
+								<div class="step-box__number">
+									<img src="assets/images/modification/steps_3.jpg" alt="">
+								</div>
+								<div class="step-box__info">
+									<div class="step-box__name">Этап</div>
+									<div class="step-box__text">Еще через некоторое количество повторений появляется реакция эйфории на алкоголь в качестве защитной реакции организма на интоксикацию.</div>
+								</div>
+							</div><!--/step-box__step-->
+							<div class="step-box__step wow animate__fadeInLeft" data-wow-delay=".6s">
+								<div class="step-box__number">
+									<img src="assets/images/modification/steps_4.jpg" alt="">
+								</div>
+								<div class="step-box__info">
+									<div class="step-box__name">Этап</div>
+									<div class="step-box__text">Алкоголь употребляется, чтобы испытать состояние эйфории. При этом количество алкоголя увеличивается и уровень интоксикации повышается, заканчиваясь патологическими изменениями в печени и нарушениями работы ЦНС.</div>
+								</div>
+							</div><!--/step-box__step-->
+						</div><!--/step-box__steps-->
+					</div><!--/step-box-->
+					<div class="modification-how__theory modification-theory">
+						<div class="modification-theory__photo">
+							<img src="assets/images/modification/pavlov.jpeg" alt="">
+							<img src="assets/images/modification/skinner.jpg" alt="">
+						</div>
+						<div class="modification-theory__info">
+							<p>Данный механизм закрепления соответствует теории условных рефлексов И. П. Павлова и теории поведенческой психотерапии Б. Ф. Скиннера.</p>
+							<p>Опираясь на научные открытия этих ученых и новейшие разработки в области поведенческой психологии, была создана технология модификации поведения 7Spsy.</p>
+						</div>
+					</div>
+				</div>
+			</section><!--/modification-how-->
+			<div class="modification-motive">
+				<div class="container">
+					<div class="modification-motive__text wow animate__zoomInMin">
+						<p>Без помощи специалиста вы можете остаться заложником своей модели поведения. Вы будете жить, не выходя из замкнутого круга!</p>
+						<p>С технологией модификации 7Spsy новая модель поведения сформируется и закрепится за 6 недель!</p>
+					</div>
+				</div>
+			</div><!--/modification-motive-->
+			<section class="modification-cases">
+				<div class="container">
+					<h2 class="modification__title">В каких случаях эффективно применяется технология?</h2>
+					<div class="modification-cases__inner">
+						<div class="modification-cases__item">
+							<div class="modification-cases__photo">
+								<img src="assets/images/modification/cases_1.jpg" alt="">
+							</div>
+							<div class="modification-cases__info">
+								<div class="modification-cases__title">Саморазвитие и самодисциплина:</div>
+								<ul class="modification-cases__list">
+									<li>— воспитание и обучение детей и подростков;</li>
+									<li>—личностный рост и самодисциплина;</li>
+									<li>— развитие духовных качеств и нравственного поведения.</li>
+								</ul>
+							</div>
+						</div><!--/modification-cases__item-->
+						<div class="modification-cases__item">
+							<div class="modification-cases__photo">
+								<img src="assets/images/modification/cases_2.jpg" alt="">
+							</div>
+							<div class="modification-cases__info">
+								<div class="modification-cases__title">Выученные проблемные формы поведения:</div>
+								<ul class="modification-cases__list">
+									<li>— переедание;</li>
+									<li>— тревожность;</li>
+									<li>— ревность, истерики, конфликты в семье, супружеские измены;</li>
+									<li>— фобии;</li>
+									<li>— агрессии;</li>
+									<li>— шопоголизм;</li>
+									<li>— интернет-зависимости.</li>
+								</ul>
+							</div>
+						</div><!--/modification-cases__item-->
+						<div class="modification-cases__item">
+							<div class="modification-cases__photo">
+								<img src="assets/images/modification/cases_3.png" alt="">
+							</div>
+							<div class="modification-cases__info">
+								<div class="modification-cases__title">Формы зависимого поведения:</div>
+								<ul class="modification-cases__list">
+									<li>— алкоголизм;</li>
+									<li>— курение;</li>
+									<li>— наркомания;</li>
+									<li>— медикаментозная зависимость;</li>
+									<li>— гиперсексуальность (нимфомания).</li>
+								</ul>
+							</div>
+						</div><!--/modification-cases__item-->
+						<div class="modification-cases__item">
+							<div class="modification-cases__photo">
+								<img src="assets/images/modification/cases_4.jpg" alt="">
+							</div>
+							<div class="modification-cases__info">
+								<div class="modification-cases__title">Психология здоровья:</div>
+								<ul class="modification-cases__list">
+									<li>— изменение форм поведения, которые являются причиной психосоматических расстройств.</li>
+								</ul>
+							</div>
+						</div><!--/modification-cases__item-->
+					</div>
+				</div>
+			</section><!--/modification-cases-->
+			<div class="call-block">
+				<div class="container">
+					<div class="call-block__text">
+						<p>Технология 7Spsy подходит для решения проблем как у взрослых, так и у детей.</p>
+						<p>Закажите консультацию, чтобы узнать, как мы можем помочь в вашем уникальном случае!</p>
+					</div>
+					<div class="call-block__btn">
+						<a href="#" class="btn btn_noupp btn-open">Заказать бесплатную консультацию</a>
+					</div>
+				</div>
+			</div><!--/call-block-->
+			<div class="modification-block">
+				<div class="container">
+					<div class="modification-block__inner">
+						<div class="modification-block__text">
+							<p>Ваше поведение может приносить вам много удовольствия или доставлять сплошные неприятности, причиняя физическую и психологическую боль.</p>
+							<p>Отрицательные формы поведения:</p>
+							<ul>
+								<li>— ломают ваши отношения;</li>
+								<li>— разрушают здоровье;</li>
+								<li>— не позволяют построить карьеру;</li>
+								<li>— мешают отдыхать, наслаждаться жизнью и быть счастливыми.</li>
+							</ul>
+						</div>
+						<div class="modification-block__video wow animate__fadeIn" data-wow-delay=".2s">
+							<iframe id="youtubeiframe155957464" width="100%" height="100%" src="//www.youtube.com/embed/O_59ywVW9lc?rel=0&amp;fmt=18&amp;html5=1&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+						</div>
+					</div>
+				</div>
+			</div><!--/modification-block-->
+			<div class="modification-appeal">
+				<div class="container">
+					<h3 class="modification-appeal__text">Станьте хозяином своего поведения!</h3>
+				</div>
+			</div><!--/modification-appeal-->
+			<section class="modification-course">
+				<div class="container">
+					<h2 class="modification__title wow animate__zoomInMin">Курс модификации поведения <br>по технологии 7Spsy содержит:</h2>
+					<div class="modification-course__inner">
+						<div class="modification-course__item wow animate__fadeInLeftMin" data-wow-offset="200">
+							<div class="modification-course__photo">
+								<img src="assets/images/modification/test.jpeg" alt="">
+							</div>
+							<div class="modification-course__title">12 тестов</div>
+							<div class="modification-course__text">1 этап — диагностическое тестирование для определения вашего состояния и личных потребностей.</div>
+						</div><!--/modification-course__item-->
+						<div class="modification-course__item wow animate__fadeInLeftMin" data-wow-delay=".2s" data-wow-offset="200">
+							<div class="modification-course__photo">
+								<img src="assets/images/modification/tools.jpg" alt="">
+							</div>
+							<div class="modification-course__title">7 инструментов</div>
+							<div class="modification-course__text">Вы получаете индивидуально подобранный комплект предметов для воздействия на все сенсорные каналы. С ним вы будете работать самостоятельно на протяжении всего курса.</div>
+						</div><!--/modification-course__item-->
+						<div class="modification-course__item wow animate__fadeInLeftMin" data-wow-delay=".4s" data-wow-offset="200">
+							<div class="modification-course__photo">
+								<img src="assets/images/modification/consultation.jpg" alt="">
+							</div>
+							<div class="modification-course__title modification-course__title_long">7 часов консультаций и 28 часов тренингов</div>
+							<div class="modification-course__text">После выполнения тренингов вы <span>ежедневно консультируетесь с личным психологом</span>, который будет вас поддерживать и мотивировать.</div>
+						</div><!--/modification-course__item-->
+					</div>
+				</div>
+			</section><!--/modification-course-->
+			<section class="modification-garancy" id="modification-garancy">
+				<div class="container">
+					<h2 class="modification__title modification__title_black">Метод запатентован и одобрен профессиональной лигой психотерапевтов</h2>
+					<div class="modification__text">С 2017 года технология эффективно применяется в Сингапуре.</div>
+					<div class="patent-block">
+						<div class="patent-block__item wow animate__zoomInMin" data-wow-offset="200">
+							<img data-fancybox="gallery-patent" src="assets/images/technology/patent_1.jpg" alt="">
+						</div>
+						<div class="patent-block__item wow animate__zoomInMin" data-wow-delay=".2s" data-wow-offset="200">
+							<img data-fancybox="gallery-patent" src="assets/images/technology/patent_2.jpg" alt="">
+						</div>
+						<div class="patent-block__item wow animate__zoomInMin" data-wow-delay=".4s" data-wow-offset="200">
+							<img data-fancybox="gallery-patent" src="assets/images/technology/patent_3.jpg" alt="">
+						</div>
+					</div><!--/patent-block-->
+				</div>
+			</section><!--/modification-garancy-->
+			<section class="modification-autor wow animate__fadeIn">
+				<div class="container">
+					<div class="modification-autor__inner">
+						<div class="modification-autor__appeal">
+							<h3 class="modification__title modification__title_line">От автора технологии</h3>
+							<div class="modification__text">
+								<p>"Дорогой друг, данная технология помогла многим изменить свое поведение, повысить качество жизни, стать счастливее. Я рад, что сегодня расстояние — не помеха, и мы можем помочь любому русскоговорящему человеку, где бы он ни находился.</p>
+								<p>У каждого человека есть врожденная способность к научению. Но если проблемным формам поведения человек обучается случайным образом и продолжительное время, то формирование здоровых форм поведения с помощью метода модификации поведения проходит быстрее и комфортнее".</p>
+							</div>
+						</div><!--/modification-autor__appeal-->
+						<div class="modification-autor__about">
+							<img src="assets/images/modification/pavel.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</section><!--/modification-autor-->
+			<div class="modification-facts">
+				<div class="container">
+					<div class="modification-facts__inner">
+						<div class="modification-facts__item">
+							<div class="modification-facts__logo">
+								<img src="assets/images/modification/ppl_logo.png" alt="">
+							</div>
+							<div class="modification-facts__info">
+								Все специалисты являются членами
+								<div>Общероссийской Профессиональной Психотерапевтической Лиги</div>
+							</div>
+						</div><!--/modification-facts__item-->
+						<div class="modification-facts__item">
+							<div class="modification-facts__logo">
+								<img src="assets/images/modification/appt_logo.png" alt="">
+							</div>
+							<div class="modification-facts__info">
+								А также состоят в
+								<div>Ассоциации поведенческой психологии и терапии</div>
+							</div>
+						</div><!--/modification-facts__item-->
+					</div>
+				</div>
+			</div><!--/modification-facts-->
+			<div class="modification-motive modification-motive_control">
+				<div class="container">
+					<div class="modification-motive__text wow animate__zoomInMin">
+						<p>Ваша жизнь — это ваши привычки и формы поведения.<br>Возьмите их под контроль и управляйте своей жизнью осознанно.</p>
+					</div>
+				</div>
+			</div><!--/modification-motive-->
+		</main>
+		<footer class="footer footer_blue">
+			<div class="footer__decor footer__decor-left">
+				 <svg>
+        			<use xlink:href="#bg-hex"></use>
+      			</svg>
+			</div>
+			<div class="footer__decor footer__decor-right">
+				 <svg>
+        			<use xlink:href="#bg-hex"></use>
+      			</svg>
+			</div>
+			<div class="footer__inner">
+				<div class="footer__column">
+					<a href="/" class="footer__logo">
+						<img src="assets/images/logo_blue.svg" alt="">
+					</a>
+				</div>
+				<div class="footer__column">
+					<div class="footer__info">
+						<div>Официальный партнер Institute of Distance Psychology PTE.LTD в РФ:</div>
+						<div>ООО Центр Научной Психологии «Технологии Идеала»</div>
+						<div>630005, г. Новосибирск, ул. Фрунзе, 88</div>
+						<div>ИНН 5406976032</div>
+						<div>ОГРН 1175476058801 </div>
+					</div>
+				</div>
+				<div class="footer__column">
+					<ul class="footer__links">
+						<li><a href="#">Политика конфиденциальности</a></li>
+						<li><a href="#">Политика обработки персональных данных</a></li>
+						<li><a href="#">Договор оферты</a></li>
+					</ul>
+				</div>
+				<div class="footer__column footer__contact">
+					<div class="footer__contact__item">
+						<svg>
+        					<use xlink:href="#phone"></use>
+      					</svg>
+      					<a href="tel:+78005509936">8 (800) 550-99-36</a>
+					</div>
+					<div class="footer__contact__item">
+						<svg>
+        					<use xlink:href="#email"></use>
+      					</svg>
+      					<a href="mailto:info_ru@7spsy.com">info_ru@7spsy.com</a>
+					</div>
+					<div class="footer__social">
+						<a href="#" target="blank">
+							<img src="assets/images/instagram-logo.svg" alt="">
+						</a>
+						<a href="#" target="blank">
+							<img src="assets/images/vk-logo.svg" alt="">
+						</a>
+						<a href="#" target="blank">
+							<img src="assets/images/odnoklassniki-logo.svg" alt="">
+						</a>
+						<a href="#" target="blank">
+							<img src="assets/images/facebook-logo.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="form-popup">
+			<div class="closex"></div>
+			<div class="form-popup__inner">
+				<span class="form-popup__close">
+					<img src="assets/images/close.svg" alt="">
+				</span>
+				<div class="form-block">
+					<div class="form-block__title">Получить консультацию</div>
+					<form action="#">
+						<input type="text" placeholder="Имя">
+						<input type="text" placeholder="Телефон">
+						<input type="text" placeholder="Email">
+						<div class="form-block__approval">
+							<input type="checkbox" id="approval-checkbox">
+							<label for="approval-checkbox">
+								<span></span>
+								<a href="#">Даю согласие на обработку моих персональных данных в соответствии с политикой конфиденциальности </a>
+							</label>
+						</div>
+						<button type="submit">Отправить данные</button>
+					</form>
+				</div><!--/form-block-->
+			</div>
+		</div><!--/form-popup-->
+
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
