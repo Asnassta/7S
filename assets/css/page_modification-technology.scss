@@ -836,16 +836,34 @@
 	}
 }
 
+@media(max-width: 900px) and (max-height: 800px) {
+	.modification {
+		&-intro {
+			&__title {
+				margin-top: 40px;
+			}
+		}
+	}
+}
+
 @media(max-width: 765px) {
 	.modification {
 		&-intro {
+			&__content {
+				padding: 20px 0 40px;
+				position: static;
+				background: url("../images/bg-mounting.jpg") center top no-repeat;
+			}
 			&__bg {
-				>* {
-					height: 100vh;
+				video {
+					display: none;
 				}
 			}
 			&__title {
 				font-size: 30px;
+			}
+			&__subtitle {
+				color: $lblue;
 			}
 		}
 	}

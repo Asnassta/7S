@@ -1668,11 +1668,21 @@ body.white.active {
     padding: 0;
     margin-top: 20px; } }
 
-@media (max-width: 765px) {
-  .modification-intro__bg > * {
-    height: 100vh; }
+@media (max-width: 900px) and (max-height: 800px) {
   .modification-intro__title {
-    font-size: 30px; } }
+    margin-top: 40px; } }
+
+@media (max-width: 765px) {
+  .modification-intro__content {
+    padding: 20px 0 40px;
+    position: static;
+    background: url("../images/bg-mounting.jpg") center top no-repeat; }
+  .modification-intro__bg video {
+    display: none; }
+  .modification-intro__title {
+    font-size: 30px; }
+  .modification-intro__subtitle {
+    color: #0073d0; } }
 
 @media (max-width: 546px) {
   .modification__title {
@@ -2658,7 +2668,8 @@ ul.menu-dots {
   .footer__decor {
     position: absolute;
     opacity: .2;
-    pointer-events: none; }
+    pointer-events: none;
+    z-index: 1; }
     .footer__decor svg {
       width: 455px;
       height: 480px;
@@ -2674,7 +2685,9 @@ ul.menu-dots {
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    position: relative;
+    z-index: 2; }
     .footer__inner > * {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
