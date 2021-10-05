@@ -573,6 +573,11 @@
 }
 
 /*========Adaptive============*/
+@media(max-width: 1024px) {
+	.page_servise {
+		background-position: top right -300px;
+	}
+}
 @media(max-width: 992px) {
 	.page_servise {
 		.call-block__text {
