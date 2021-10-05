@@ -1549,10 +1549,10 @@ body.white.active {
   .modification-intro__bg > * {
     margin-top: 0; }
   .modification-intro__content {
-    top: 40px; }
+    top: 100px; }
   .modification-intro__title {
     font-size: 50px;
-    margin: 120px 0 45px; }
+    margin: 90px 0 45px; }
   .modification-intro__subtitle {
     font-size: 20px; } }
 
@@ -1560,7 +1560,7 @@ body.white.active {
   .modification__title {
     font-size: 38px; }
   .modification-intro__content {
-    top: 20px; }
+    top: 100px; }
   .modification-intro__title {
     font-size: 42px; }
   .modification-intro__bg > * {
@@ -1689,7 +1689,7 @@ body.white.active {
 
 @media (max-width: 765px) {
   .modification-intro__content {
-    padding: 20px 0 40px;
+    padding: 90px 0 40px;
     position: static;
     background: url("../images/bg-mounting.jpg") center top no-repeat; }
   .modification-intro__bg video {
@@ -2328,8 +2328,7 @@ body.white.active {
 /*========Adaptive============*/
 @media (max-width: 1024px) {
   .page_servise {
-    background-position: top left;
-    background-size: auto 100vh; } }
+    background-position: top left; } }
 
 @media (max-width: 992px) {
   .page_servise .call-block__text {

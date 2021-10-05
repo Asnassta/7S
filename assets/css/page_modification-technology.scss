@@ -633,11 +633,11 @@
 				}
 			}
 			&__content {
-				top: 40px;
+				top: 100px;
 			}
 			&__title {
 				font-size: 50px;
-				margin: 120px 0 45px;
+				margin: 90px 0 45px;
 			}
 			&__subtitle {
 				font-size: 20px;
@@ -653,7 +653,7 @@
 		}
 		&-intro {
 			&__content {
-				top: 20px;
+				top: 100px;
 			}
 			&__title {
 				font-size: 42px;
@@ -850,7 +850,7 @@
 	.modification {
 		&-intro {
 			&__content {
-				padding: 20px 0 40px;
+				padding: 90px 0 40px;
 				position: static;
 				background: url("../images/bg-mounting.jpg") center top no-repeat;
 			}
