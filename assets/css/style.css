@@ -1791,9 +1791,26 @@ body.white.active {
     margin-top: 70px; } }
 
 .page_servise {
-  background: url("../images/servise/bg_servise.jpg") center no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
+  /*background: url("../images/servise/bg_servise.jpg") center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;*/
+  position: relative;
+  overflow: hidden; }
+  .page_servise:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow-scrolling: touch;
+    pointer-events: none;
+    background: url("../images/servise/bg_servise.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    height: 100%;
+    width: 100%; }
   .page_servise .call-block .container {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -2427,6 +2444,8 @@ body.white.active {
 @media (max-width: 546px) {
   .string, .cursor {
     font-size: 24px; }
+  .page_servise:after {
+    background-position: top right -250px; }
   .servise__text {
     font-size: 16px; }
   .servise-intro__title {

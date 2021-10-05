@@ -1,7 +1,25 @@
 .page_servise {
-	background: url("../images/servise/bg_servise.jpg") center no-repeat;
+	/*background: url("../images/servise/bg_servise.jpg") center no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
+	background-attachment: fixed;*/
+	position: relative;
+	overflow: hidden;
+	&:after {
+		content: "";
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	z-index: -1;
+    	overflow-scrolling: touch;
+    	pointer-events: none;
+    	background: url("../images/servise/bg_servise.jpg") center center no-repeat;
+    	background-size: cover;
+    	min-height: 100%;
+    	height: 100%;
+    	width: 100%;
+	}
 	.call-block {
 		.container {
 			align-items: center;
@@ -727,6 +745,11 @@
 @media(max-width: 546px) {
 	.string, .cursor {
 		font-size: 24px;
+	}
+	.page_servise {
+		&:after {
+			background-position: top right -250px;
+		}
 	}
 	.servise {
 		&__text {
