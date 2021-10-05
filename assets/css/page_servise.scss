@@ -573,9 +573,11 @@
 }
 
 /*========Adaptive============*/
-@media(max-width: 1024px) {
-	.page_servise {
-		background-position: top left;
+@media(max-width: 1200px) {
+	.servise {
+		&-intro {
+			background: linear-gradient(top, rgba(255, 255, 255, 0.1), white), url(../images/bg-mounting.jpg) center top 40px / auto 460px no-repeat, #fff;
+		}
 	}
 }
 @media(max-width: 992px) {
