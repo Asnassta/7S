@@ -1,8 +1,10 @@
 @import 'fonts.scss';
 @import 'variables.scss';
 @import 'page.scss';
+@import 'page_educational.scss';
 @import 'page_technology.scss';
 @import 'page_modification-technology.scss';
+@import 'page_servise.scss';
 /*Reset
 ===============*/
 *{
@@ -58,15 +60,18 @@ body {
 
 /*==============Elements================*/
 .main {
-	padding-top: 155px;
+	padding-top: 78px;
 }
+
 .btn {
 	display: inline-block;
 	font-family: $ff;
 	font-size: 14px;
 	font-weight: 700;
+	line-height: 1.2;
 	color: $wh;
 	text-transform: uppercase;
+	text-align: center;
 	padding: 13px 30px;
 	background-color: $lblue;
 	border-radius: 50px;
@@ -76,6 +81,10 @@ body {
 	}
 	&_big {
 		font-size: 18px;
+		padding: 20px 60px;
+	}
+	&_medium {
+		font-size: 16px;
 		padding: 20px 60px;
 	}
 	&_noupp {
@@ -214,6 +223,7 @@ ul {
  		content: "»";
  		margin-left: 5px;
  		font-size: 18px;
+ 		color: $wh;
  	}
  	&:last-child {
  		margin-right: 0;
@@ -223,11 +233,18 @@ ul {
  	}
  	&:hover {
  		color: $orange;
-
+ 		&:after {
+ 			color: $wh;
+ 		}
  	}
  }
  &_center {
  	text-align: center;
+ }
+ &_regular {
+ 	.breadcrumbs__item {
+ 		font-weight: 400;
+ 	}
  }
 }
 /*==============/elements================*/
@@ -888,6 +905,7 @@ ul {
 		max-width: 1024px;
 		margin: 0 auto;
 		display: flex;
+		justify-content: space-between;
 		position: relative;
 		z-index: 2;
 		>* {
@@ -1231,7 +1249,7 @@ ul {
 
 @media(max-width: 992px) {
 	.container {
-		max-width: 640px;
+		max-width: 670px;
 	}
 	.title {
 		font-size: 28px;
@@ -1485,7 +1503,7 @@ ul {
 		}
 	}
 	.btn {
-		&_big {
+		&_big, &_medium {
 			font-size: 14px;
 			padding: 15px 25px;
 		}
